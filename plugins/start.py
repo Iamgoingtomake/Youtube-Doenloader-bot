@@ -5,9 +5,7 @@ from pyrogram import Client, Filters, StopPropagation, InlineKeyboardButton, Inl
 async def start(client, message):
     # return
     joinButton = InlineKeyboardMarkup([
-        [InlineKeyboardButton("Channel", url="https://t.me/InFoTel_Group")],
-        [InlineKeyboardButton(
-            "Report Bugs 😊", url="https://t.me/InFoTel_Group")]
+        [InlineKeyboardButton("Owner", url="https://t.me/C_Sreehari123")],
     ])
     welcomed = f"Hey <b>{message.from_user.first_name}</b>\nThis is a Telegram YouTube Download Bot!\n\n<b>Please send me any YouTube Link, I can upload to telegram as File/Video</b>\n\n/help for More info"
     await message.reply_text(welcomed, reply_markup=joinButton)
